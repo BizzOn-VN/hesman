@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dũng sĩ Hesman</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="viewer-container">
+    <div class="header">
+      <div class="header-top">
+        <h1>📖 Dũng sĩ Hesman</h1>
+        <div class="page-counter" id="pageCounter">TRANG 1/69</div>
+      </div>
+      <div class="header-select">
+        <label for="dataset">Tập:</label>
+        <select id="dataset" onchange="changeDataset()"></select>
+      </div>
+    </div>
+
+    <div class="viewer-body">
+      <button class="nav-button left" onclick="prevPage()">◀</button>
+      <div class="image-area">
+        <img id="imageView" src="" alt="Trang truyện">
+      </div>
+      <button class="nav-button right" onclick="nextPage()">▶</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
